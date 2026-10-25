@@ -17,7 +17,7 @@ namespace projekt_elektro_bud_wpf
             public string Regal { get; set; }
             public string Polka { get; set; }
 
-            // Konstruktor przypisuje dane produktu i miejsce przechowywania
+            // Konstruktor daje dane produktu i miejsce przechowywania
             public Produkt(string nazwa, string ean,
                            string sektor, string regal, string polka)
             {
@@ -30,7 +30,6 @@ namespace projekt_elektro_bud_wpf
         }
 
         // Lista produktów znajdujących się w magazynie
-        // Lokalizacje są przykładowe i można je zmienić
         List<Produkt> produkty = new List<Produkt>()
         {
             new Produkt("Kabel elektryczny", "5901234567890",
@@ -48,17 +47,14 @@ namespace projekt_elektro_bud_wpf
         {
             InitializeComponent();
 
-            // Po uruchomieniu wyświetla wszystkie trzy produkty
             listaProduktow.ItemsSource = produkty;
         }
 
         // Wyszukiwanie po nazwie lub kodzie EAN
         private void szukaj_TextChanged(object sender, TextChangedEventArgs e)
         {
-            // Pobiera tekst wpisany w wyszukiwarce
             string tekst = szukaj.Text.Trim();
 
-            // Wybiera produkty pasujące do nazwy lub kodu EAN
             listaProduktow.ItemsSource = produkty
                 .Where(p =>
                     p.Nazwa.Contains(

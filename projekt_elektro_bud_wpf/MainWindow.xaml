@@ -14,14 +14,14 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Napis nad polem wyszukiwania -->
+        
         <TextBlock Grid.Row="0"
                    Text="Szukaj"
                    FontSize="18"
                    FontWeight="Bold"
                    Margin="0,0,0,8"/>
 
-        <!-- Pole wyszukiwania produktów -->
+        <!--Pole wyszukiwania-->
         <TextBox x:Name="szukaj"
                  Grid.Row="1"
                  Height="35"
@@ -33,7 +33,7 @@
                  TextChanged="szukaj_TextChanged"
                  ToolTip="Wpisz nazwę produktu lub kod EAN"/>
 
-        <!-- Tabela produktów i ich lokalizacji -->
+        <!--Tabela produktów-->
         <DataGrid x:Name="listaProduktow"
                   Grid.Row="2"
                   AutoGenerateColumns="False"
@@ -44,27 +44,27 @@
 
             <DataGrid.Columns>
 
-                <!-- Nazwa produktu -->
+                
                 <DataGridTextColumn Header="Nazwa produktu"
                                     Binding="{Binding Nazwa}"
                                     Width="2*"/>
 
-                <!-- Kod kreskowy EAN -->
+                
                 <DataGridTextColumn Header="EAN"
                                     Binding="{Binding EAN}"
                                     Width="2*"/>
 
-                <!-- Sektor magazynu -->
+                
                 <DataGridTextColumn Header="S"
                                     Binding="{Binding Sektor}"
                                     Width="*"/>
 
-                <!-- Numer regału -->
+                
                 <DataGridTextColumn Header="R"
                                     Binding="{Binding Regal}"
                                     Width="*"/>
 
-                <!-- Numer półki -->
+               
                 <DataGridTextColumn Header="P"
                                     Binding="{Binding Polka}"
                                     Width="*"/>
