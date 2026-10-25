@@ -55,17 +55,17 @@
                                     Width="2*"/>
 
                 <!-- Sektor magazynu -->
-                <DataGridTextColumn Header="Sektor"
+                <DataGridTextColumn Header="S"
                                     Binding="{Binding Sektor}"
                                     Width="*"/>
 
                 <!-- Numer regału -->
-                <DataGridTextColumn Header="Regał"
+                <DataGridTextColumn Header="R"
                                     Binding="{Binding Regal}"
                                     Width="*"/>
 
                 <!-- Numer półki -->
-                <DataGridTextColumn Header="Półka"
+                <DataGridTextColumn Header="P"
                                     Binding="{Binding Polka}"
                                     Width="*"/>
 

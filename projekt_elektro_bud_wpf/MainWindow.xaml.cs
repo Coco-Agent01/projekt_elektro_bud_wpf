@@ -34,13 +34,13 @@ namespace projekt_elektro_bud_wpf
         List<Produkt> produkty = new List<Produkt>()
         {
             new Produkt("Kabel elektryczny", "5901234567890",
-                        "Sektor A", "Regał 1", "Półka 1"),
+                        "Sektor 1", "Regał 1", "Półka 1"),
 
             new Produkt("Gniazdko elektryczne", "5909876543210",
-                        "Sektor A", "Regał 1", "Półka 2"),
+                        "Sektor 2", "Regał 1", "Półka 2"),
 
             new Produkt("Żarówka LED", "5901111222233",
-                        "Sektor B", "Regał 2", "Półka 1")
+                        "Sektor 3", "Regał 2", "Półka 1")
         };
 
         // Uruchomienie głównego okna aplikacji
